@@ -1,226 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/sheetstyle/sobrenosotros.css" />
     <link rel="stylesheet" href="/sheetstyle/style.css">
     <title>Sobre Nosotros</title>
-</head>
-<body>
-                       <!--BARRA NAVEGACIÓN-->
-                       <nav class="nav navbar">
-                        <div class="nav__logo">
-                            <a href="/index.html" id="navbar__logo">
-                            
-                            <img src="/images/detranquis_logo.png" class="nav__logo-img" alt="" />
-                        </a>
-                        </div>
-                            <ul class="nav__menu" id="menu">
-                                <li class="nav__link"><a class="atop" href="./tipoBares.html">Tipo Bares</a></li>
-                                <li class="nav__link"><a class="atop" href="./zonas.html">Zonas</a></li>
-                            </ul>
-        
-                        <div class="nav__buttons">
-                            <a href="" class="nav__button">Regístrate</a>
-                            <a href="/pages/login.html" class="nav__button nav__button--bold">Inicia Sesión</a>
-                        </div>
-                        <div class="menu-bar">
-                            <i class="fas fa-bars" id="menu-bar"></i>
-                      </div>
-                    </nav>
+  </head>
+  <body>
+    <!--BARRA NAVEGACIÓN-->
+    <nav class="nav navbar"></nav>
 
-                    <style>
-                      body {
-                        margin: 0;
-                      }
-                      
-                      html {
-                        box-sizing: border-box;
-                      }
-                      
-                      *, *:before, *:after {
-                        box-sizing: inherit;
-                      }
-                      
-                      .column {
-                        float: left;
-                        width: 33.3%;
-                        margin-bottom: 16px;
-                        padding: 0 8px;
-                      }
-                      
-                      .card {
-                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                        margin: 8px;
-                      }
-                      
-                      .about-section {
-                        padding: 50px;
-                        text-align: center;
-                        background-color: #474e5d;
-                        color: white;
-                      }
-                      
-                      .container {
-                        padding: 0 16px;
-                      }
-                      
-                      .container::after, .row::after {
-                        content: "";
-                        clear: both;
-                        display: table;
-                      }
-                      
-                      .title {
-                        color: grey;
-                      }
-                      
-                      .button {
-                        border: none;
-                        outline: 0;
-                        display: inline-block;
-                        padding: 8px;
-                        color: white;
-                        background-color: #000;
-                        text-align: center;
-                        cursor: pointer;
-                        width: 100%;
-                      }
-                      
-                      .button:hover {
-                        background-color: #555;
-                      }
-                      
-                      @media screen and (max-width: 650px) {
-                        .column {
-                          width: 100%;
-                          display: block;
-                        }
-                      }
-                      </style>
-
-                
-                    
-                    <div class="about-section">
-                      <h1>Sobre Nosotros</h1>
-                      <p>Some text about who we are and what we do.</p>
-                      <p>Resize the browser window to see that this page is responsive by the way.</p>
-                    </div>
-                    
-                    <h2 style="text-align:center">Nuestro equipo</h2>
-                    <div class="row">
-                      <div class="column">
-                        <div class="card">
-                          <img src="/images/Bruno.jpg" alt="Jane" style="width:100%">
-                          <div class="container">
-                            <h2>Bruno Henrique Lima </h2>
-                            <p class="title">CEO & Founder</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            <p>jane@example.com</p>
-                            <p><button class="button">Contact</button></p>
-                          </div>
-                        </div>
-                      </div>
-                    
-                      <div class="column">
-                        <div class="card">
-                          <img src="/images/Natalie.png" alt="Foto de Natalie Gómez Tapia" style="width:100%">
-                          <div class="container">
-                            <h2>Natalie Gómez Tapia</h2>
-                            <p class="title">Art Director</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            <p>mike@example.com</p>
-                            <p><button class="button">Contact</button></p>
-                          </div>
-                        </div>
-                      </div>
-                    
-                      <div class="column">
-                        <div class="card">
-                          <img src="/images/Gemma.jpg" alt="Foto de Gemma Viñolas Rizo" style="width:100%">
-                          <div class="container">
-                            <h2>Gemma Viñolas Rizo</h2>
-                            <p class="title">Designer</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            <p>john@example.com</p>
-                            <p><button class="button">Contact</button></p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="column">
-                        <div class="card">
-                          <img src="/images/Mauri.jpeg" alt="Foto de Mauricio Lisotti Camarena" style="width:100%">
-                          <div class="container">
-                            <h2>Mauricio Lisotti Camarena</h2>
-                            <p class="title">Art Director</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            <p>mike@example.com</p>
-                            <p><button class="button">Contact</button></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="column">
-                        <div class="card">
-                          <img src="" alt="Foto de Gabriel Valentín Romero" style="width:100%">
-                          <div class="container">
-                            <h2>Gabriel Valentin Romero</h2>
-                            <p class="title">Art Director</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            <p>mike@example.com</p>
-                            <p><button class="button">Contact</button></p>
-                          </div>
-                        </div>
-                      </div>
-
-
-                    </div>
-
-                                             <!--FOOTER-->
-             <footer class="footer ">
-                <div class="footer__container container">
-                   
-                    <div class="footer__links"> 
-                        <p class="footer">Sobre Nosotros</p>
-                        <a href="" class="footer__link">Contáctanos</a>
-                        <a href="" class="footer__link">Cómo funciona</a>
-                        <a href="" class="footer__link">Añade tu bar</a>
-                        <a href="" class="footer__link">Únete</a>
-                       
-                    </div>
-                    
-        
-                
-                <section class="social__media">
-                    <div class="social__media--wrap">
-                      <div class="footer__logo">
-                        <a href="/" id="footer__logo">DE TRANQUIS</a>
-                      </div>
-                      <p class="website__rights">© DE TRANQUIS 2022. All rights reserved</p>
-                      <div class="social__icons">
-                        <a href="/" class="social__icon--link" target="_blank"
-                          ><i class="fab fa-facebook"></i
-                        ></a>
-                        <a href="/" class="social__icon--link"
-                          ><i class="fab fa-instagram"></i
-                        ></a>
-                        <a href="/" class="social__icon--link"
-                          ><i class="fab fa-youtube"></i
-                        ></a>
-                        <a href="/" class="social__icon--link"
-                          ><i class="fab fa-linkedin"></i
-                        ></a>
-                        <a href="/" class="social__icon--link"
-                          ><i class="fab fa-twitter"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-            </footer>
-            <script src="/js/scripts.js"></script>
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</body>
+    <!--PAGINA SOBRE NOSOTROS-->
+    <div class="about-section">
+      <h1>Sobre Nosotros</h1>
+      <p>Some text about who we are and what we do.</p>
+      <p>
+        Resize the browser window to see that this page is responsive by the
+        way.
+      </p>
+    </div>
+    <h2 style="text-align: center">Nuestro equipo</h2>
+    <div class="row">
+      <!--BRUNO-->
+      <div class="column">
+        <div class="card">
+          <img src="/images/Burno.png" alt="Jane" style="width: 100%" />
+          <div class="container">
+            <h2>Bruno Henrique Lima</h2>
+            <p class="title">CEO & Founder</p>
+            <p></p>
+            <p>bhl.x1992@gmail.com</p>
+            <p><button class="button">Contactar</button></p>
+          </div>
+        </div>
+      </div>
+      <!--NATALIE-->
+      <div class="column">
+        <div class="card">
+          <img
+            src="/images/Natalie.png"
+            alt="Foto de Natalie Gómez Tapia"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h2>Natalie Gómez Tapia</h2>
+            <p class="title">Art Director</p>
+            <p></p>
+            <p>ngomez.cep@gmail.com</p>
+            <p><button class="button">Contactar</button></p>
+          </div>
+        </div>
+      </div>
+      <!--GEMMA-->
+      <div class="column">
+        <div class="card">
+          <img
+            src="/images/Gemma.jpg"
+            alt="Foto de Gemma Viñolas Rizo"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h2>Gemma Viñolas Rizo</h2>
+            <p class="title">Designer</p>
+            <p></p>
+            <p>ge.vinolas@gmail.com</p>
+            <p><button class="button">Contactar</button></p>
+          </div>
+        </div>
+      </div>
+      <!--MAURICIO-->
+      <div class="column">
+        <div class="card">
+          <img
+            src="/images/Mauricio.png"
+            alt="Foto de Mauricio Lisotti Camarena"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h2>Mauricio Lisotti Camarena</h2>
+            <p class="title">Art Director</p>
+            <p></p>
+            <p>mauricio.lisotti@gmail.com</p>
+            <p><button class="button">Contactar</button></p>
+          </div>
+        </div>
+      </div>
+      <!--GABRIEL-->
+      <div class="column">
+        <div class="card">
+          <img
+            src="/images/Gabriel.png"
+            alt="Foto de Gabriel Valentín Romero"
+            style="width: 100%"
+          />
+          <div class="container">
+            <h2>Gabriel Valentin Romero</h2>
+            <p class="title">Art Director</p>
+            <p></p>
+            <p>brielz112@gmail.com</p>
+            <p><button class="button">Contactar</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/PAGINA SOBRE NOSOTROS-->
+    <!--FOOTER-->
+    <footer class="footer"></footer>
+     <!--SCRIPTS-->
+    <script src="/js/navbar.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
 </html>

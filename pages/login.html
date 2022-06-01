@@ -1,92 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   
-   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<link rel="stylesheet" href="/sheetstyle/login.css">
-<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/sheetstyle/login.css" />
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Kaushan+Script"
+    rel="stylesheet"
+  />
+  <link
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous"
+  />
 
-<body>
+  <body>
+    <!--BARRA NAVEGACIÓN-->
+    <nav class="nav navbar"></nav>
 
-                                 <!--BARRA NAVEGACIÓN-->
-                                 <nav class="nav navbar">
-                                    <div class="nav__logo">
-                                        <a href="/index.html" id="navbar__logo">
-                                        
-                                        <img src="/images/detranquis_logo.png" class="nav__logo-img" alt="" />
-                                    </a>
-                                    </div>
-                                        <ul class="nav__menu" id="menu">
-                                            <li class="nav__link"><a class="atop" href="/pages/tipoBares.html">Tipo Bares</a></li>
-                                            <li class="nav__link"><a class="atop" href="/pages/zonas.html">Zonas</a></li>
-                                            <li class="nav__link"><a class="atop" href="/pages/sobreNosotros.html">Sobre De Tranquis</a></li>
-                                        </ul>
-                                    <div class="menu-bar">
-                                        <i class="fas fa-bars" id="menu-bar"></i>
-                                  </div>
-                                </nav>
-                                
     <div class="container">
-        <div class="row">
-			<div class="col-md-5 mx-auto">
-			<div id="first">
-				<div class="myform form ">
-					 <div class="logo mb-3">
-						 <div class="col-md-12 text-center">
-							<h1>Inicia Sesión o Registrate</h1>
-						 </div>
-					</div>
-                   <form action="" method="post" name="login">
-                           <div class="form-group">
-                              <label for="exampleInputEmail1">Correo Eletrónico</label>
-                              <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Correo Electrónico">
-                           </div>
-                           <div class="form-group">
-                              <label for="exampleInputEmail1">Contraseña</label>
-                              <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
-                           </div>
-                           <div class="form-group">
-                              <p class="text-center">Al registrarse acepta nuestro <a href="#">Términos de Uso</a></p>
-                           </div>
-                           <div class="col-md-12 text-center ">
-                              <button type="submit" class=" btn btn-block mybtn tx-tfm">Iniciar Sesión</button>
-                           </div>
-                           <div class="col-md-12 ">
-                              <div class="login-or">
-                                 <hr class="hr-or">
-                                 <span class="span-or">O</span>
-                              </div>
-                           </div>
-                           <div class="col-md-12 mb-3">
-                              <p class="text-center">
-                                 <a href="javascript:void();" class="google btn mybtn"><i class="fa fa-google-plus">
-                                 </i> Regístrese usando Google
-                                 </a>
-                              </p>
-                           </div>
-                           <div class="form-group">
-                              <p class="text-center">¿No tienes cuenta?<a href="#" id="signup"> Regístrate aquí</a></p>
-                           </div>
-                        </form>
-                 
-				</div>
-			</div>
-         </div>
+      <div class="row">
+        <div class="col-md-5 mx-auto">
+          <div id="first">
+            <div class="myform form">
+              <div class="logo mb-3">
+                <div class="col-md-12 text-center">
+                  <h1>Inicia Sesión o Registrate</h1>
+                </div>
+              </div>
+              <form action="" method="post" name="login">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Correo Eletrónico</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="emailHelp"
+                    placeholder="Correo Electrónico"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Contraseña</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter Password"
+                  />
+                </div>
+                <div class="form-group">
+                  <p class="text-center">
+                    Al registrarse acepta nuestro
+                    <a href="#">Términos de Uso</a>
+                  </p>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="btn btn-block mybtn tx-tfm">
+                    Iniciar Sesión
+                  </button>
+                </div>
+                <div class="col-md-12">
+                  <div class="login-or">
+                    <hr class="hr-or" />
+                    <span class="span-or">O</span>
+                  </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                  <p class="text-center">
+                    <a href="javascript:void();" class="google btn mybtn"
+                      ><i class="fa fa-google-plus"> </i> Regístrese usando
+                      Google
+                    </a>
+                  </p>
+                </div>
+                <div class="form-group">
+                  <p class="text-center">
+                    ¿No tienes cuenta?<a href="#" id="signup">
+                      Regístrate aquí</a
+                    >
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-         <script src="/js/login.js"></script>
-         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</body>
+    
+     <!--SCRIPTS-->
+    <script src="/js/navbar.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
 </html>

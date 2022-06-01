@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+html{
+  overflow-x: hidden;
+
+}
+
 :root {
   --font1: "Overpass", sans-serif;
   --font2: "Ubuntu", sans-serif;
