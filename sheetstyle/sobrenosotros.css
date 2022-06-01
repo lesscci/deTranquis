@@ -10,12 +10,16 @@ body {
     box-sizing: inherit;
   }
   
-  .column {
-    float: left;
-    width: 33.3%;
+  .column {float: left;
+    width: 20%;
     margin-bottom: 16px;
     padding: 0 8px;
   }
+
+    p{
+      padding: 3px;
+    }
+
   
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
