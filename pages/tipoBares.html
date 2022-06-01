@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=hola, initial-scale=1.0" />
     <link rel="stylesheet" href="/sheetstyle/style.css" />
+    <link rel="stylesheet" href="/sheetstyle/Filtros.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
     <title>Tipos de Bares</title>
   </head>
   <body>
@@ -42,43 +44,30 @@
         <i class="fas fa-bars" id="menu-bar"></i>
       </div>
     </nav>
-    <!--TIPO DE BARES-->
-    <div class="container">
+
+<!--TIPO DE BARES-->
+
+  <div class="container">
     <div class="btn-group">
-      <button
-        type="button"
-        class="btn btn-default dropdown-toggle "
-        data-toggle="dropdown"
-      >
-        Tipos de bare <span class="caret"></span>
-      </button>
-    
-      <ul class="dropdown-menu" role="menu">
-        <li><a href="#">Temátio</a></li>
-        <li><a href="#">Antiguo / Clássico</a></li>
-        <li><a href="#">Bar Café</a></li>
-        <li class="divider"></li>
-        <li><a href="#">Bar Americano / Sport Bar</a></li>
-        <li><a href="">Cócteles</a></li>
-        <li><a href="">Playa / Chiringuito</a></li>
-        <li><a href="">Dancing Bar / Club</a></li>
-        <li><a href="">Taberna</a></li>
-        <li><a href="">Música en directo</a></li>
-        <li><a href="">Rooftops</a></li>
-        <li><a href="">Shisha bar</a></li>
-        <li><a href="">Vermuteria</a></li>
-        <li><a href="">Vinoteca</a></li>
-        <li><a href="">Craft Beer</a></li>
-        <li><a href="">LGBTQIA+</a></li>
-        <li><a href="">Karaoke</a></li>
-        <li><a href="">Mágia</a></li>
-        <li><a href="">Romántico</a></li>
-        <li><a href="">Juice bar</a></li>
-        <li><a href="">Bar secreto</a></li>
-        <li><a href="">Pub irlandés</a></li>
-      </ul>
-    </div>
-  </div>
+      <div class="services" id="services">
+        <h1>Tipos de Bares</h1>
+         <section>
+      <div class="container">
+          <div class="row no-gutters">
+              <div class="filtering col-sm-12 text-center">
+                  <span data-filter="*" class="active"><a href="*">Todo</a></span>
+                  <span data-filter=".cerveza" class=""><a href=".cerveza"></a>Cerveza</span>
+                  <span data-filter=".vino" class=""><a href="Vino"></a>Vino</span>
+                  <span data-filter=".cocktails" class=""><a href="Cocktails"></a>Cocktails</span>
+                  <span data-filter=".sportsbar" class=""><a href="SportsBar"></a>Sports Bar</span>
+                  <span data-filter=".chiringuito" class=""><a href="Chiringuito"></a>Chiringuito</span>
+                  <span data-filter=".rooftops" class=""><a href="Rooftops"></a>Rooftops</span><i class="fa-solid fa-hotel"></i>
+                  <span data-filter=".otros" class=""><a href="Otros"></a>Otros</span>     
+              </div>
+          </div>
+      </div>
+  </section>
+  
 
     <!--FOOTER-->
     <footer class="footer">
@@ -124,7 +113,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
+    
     <script src="js/scripts.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- JavaScript Bundle with Popper -->
