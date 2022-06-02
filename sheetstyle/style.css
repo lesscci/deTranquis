@@ -9,7 +9,7 @@
 }
 
 html{
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 :root {
@@ -39,6 +39,8 @@ html{
 
   body {
     font-family: var(--font1);
+    width: 100%;
+    height: 100%;
   }
 
   .hero{
@@ -115,6 +117,7 @@ html{
     color: hsl(353, 100%, 62%);
     text-decoration: none;
     font-weight: 700;
+    padding: 10px;
   }
 
   a{
@@ -161,9 +164,21 @@ html{
 
   
   .nav__menu {
+    display: none;
+    align-items: center;
+    width: 100%;
+    /* gap: 60px; */
+  }
+
+  .nav__menu--dos{
     display: flex;
     align-items: center;
-    gap: 60px;
+    width: 100%;
+  }
+  .nav__ul-menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
   }
 
   .navbar{
@@ -265,7 +280,7 @@ display: none;
 
 
 .designed--left {
-  --padding-container: 0 0 80px;
+  --padding-container: 0 0 70px;
 }
 
 .designed__illustration--right {
@@ -344,7 +359,7 @@ display: none;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   font-size: 2.5rem;
 }
 
@@ -486,26 +501,52 @@ flex-direction: column-reverse;
       /*BARRA NAVEGACIÓN*/
     
       .nav__logo-img{
+        display: none;
         width: 3.5em;
         }
       .navbar{
           display: flex;
           align-items: stretch;
-          justify-items: start;
-          align-content: center;
-          height: auto;
+          /* justify-items: start; */
+          /* align-content: center; */
+          /* height: auto; */
+          width: 100%;
+          height: 0;
+          position: fixed;
+          bottom: 0;
+          /* position: absolute; */
       }
 
-      .navbar .nav__menu {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background-color: white;
-        top: 61px;
-        height: 19vh;
-        width: 30vw;
-        transform: translate(300%);
-        transition: all 1.4s;
+      .nav__menu {
+         display: flex; 
+        position: fixed;
+        /* margin: auto; */
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+        left: 0;
+        /* top: 61px;  */
+        bottom: 0;
+        /* right: 0; */
+        /* width: 100%; */
+        /* height: 100%; */
+        /* transform: translate(300%); */
+        /* transition: all 1.4s; */
+        /* width: 100%; */
+        /* height: 100%; */
+        padding: 1em;
+      }
+
+      .nav__menu--dos{
+        display: none;
+      }
+      .nav__ul-menu{
+        background-color: rgba(223, 223, 223, 0.582);
+        backdrop-filter: blur(2px);
+        /* opacity: 0.7; */
+        align-self: auto;
+        width: auto;
+        border-radius: 40px;
       }
     
       .navbar .menu-toggle {
@@ -513,11 +554,14 @@ flex-direction: column-reverse;
       }
     
       .nav__menu li {
-        margin-top: 3em;
+        padding: 1em;
+        /* margin-top: 3em; */
       }
+      .atop i {
+        /* color: blue; */
+        font-size: 1.5em;
+        }
     
-     
-
       .nav__buttons{
           display: none;
       }
@@ -530,8 +574,7 @@ flex-direction: column-reverse;
         align-items: center;
       }
       .nav__menu {
-        font-size: 12px;
-        gap:15px;
+        /* gap:15px; */
       }
 
       .designed__container{
@@ -552,28 +595,15 @@ flex-direction: column-reverse;
         grid-template-columns: 1fr;
       }
 
-      #mobile-menu{
-        position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
+      .services__card{
+        height: 325px;
+      width: 300px;
       }
 
-      .navbar__toggle .bar {
-        display: block;
-        cursor: pointer;
-      }
+   
 
-      #mobile-menu.is-active .bar:nth-child(2) {
-        opacity: 0;
-      }
-    
-      #mobile-menu.is-active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-      }
-      #mobile-menu.is-active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-      }
+
+ 
 
       .highlight {
         border-bottom: 4px solid rgb(132, 0, 255);

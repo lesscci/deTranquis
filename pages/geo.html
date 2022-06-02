@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/sheetstyle/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <title>Mapa Bares</title>
+    <style>
+      #map {
+        height: 80%;
+        border-radius: 20px;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+        <!--BARRA NAVEGACIÓN-->
+        <nav class="nav navbar"></nav>
+
+    <div id="map"></div>
+
+
+      <!--FOOTER-->
+      <footer class="footer"></footer>
+
+      <!--SCRIPTS-->
+  
+      <script src="/js/ui.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCKiIqCdZGrVxx06LSbe7uG3zXOq1Cz5k&callback=initMap"
+      async
+      defer
+    ></script>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 43.5293, lng: -5.6773 },
+          zoom: 12,
+        });
+        var marker = new google.maps.Marker({
+          position: { lat: 43.542194, lng: -5.676875 },
+          map: map,
+          title: "Bar Junajo",
+        });
+      }
+    </script>
+  </body>
+</html>

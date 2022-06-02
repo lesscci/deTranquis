@@ -32,11 +32,3 @@ const recorrerBares = (bares) => {
         })
     })
 }
-
-/*
-  <div class="media-element" >
-    <img src="/images/bar1.jpg" alt="">
-    <p class="title">
-      Dr.Stravinsky</p>
-  </div>
-*/
