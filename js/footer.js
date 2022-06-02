@@ -5,7 +5,7 @@ const crearFooter = () => {
    <div class="footer__container container">                 
     <div class="footer__links"> 
         <p class="footer">Sobre Nosotros</p>
-        <a href="" class="footer__link">Contáctanos</a>
+        <a href="/pages/contacus.html" class="footer__link">Contáctanos</a>
         <a href="" class="footer__link">Cómo funciona</a>
         <a href="" class="footer__link">Añade tu bar</a>
         <a href="" class="footer__link">Únete</a>
